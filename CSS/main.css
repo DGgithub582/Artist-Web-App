@@ -15,7 +15,7 @@ body{
 .container-1{
     margin: auto;
     width: 99%;
-    height: 210vh;
+    height: 50vh;
     display: flex;
     justify-content: space-between;
 }
@@ -23,7 +23,7 @@ body{
 /* LEFT-SIDE */
 /* overall left-side */
 .sidebar{
-    height: 225vh;
+    height: 290vh;
     width: 13%;
     background-color: black;
 }
@@ -31,9 +31,9 @@ body{
 /* top of overall left-side */
 .name-id{
     width: 100%;
-    height: 10%;
-    background-color: rgba(43, 34, 91, 0.477);
-    border-radius: 5px;
+    height: 3.5%;
+    background-color: rgb(31, 27, 54);
+    border-radius: 10px;
     position: relative;
     bottom: 9.7px;
 }
@@ -44,39 +44,40 @@ body{
     border-radius: 20px;
     float: left;
     margin-top: 10px;
-    margin-left: 5px;
+    margin-left: 9px;
 }
 
 .name-id p{
     padding-top: 10px;
     font-size: 0.8rem;
-    transform: translate(15px, 0);
+    transform: translate(10px, 0);
 }
 
 .name-id-img img{
     width: 30px;
     height: 30px;
     border-radius: 20px;
+    border: 0.2px solid white;
 }
 
 /* navigation of left-side */
 
 nav{
     width: 100%;
-    height: 86.8%;
-    background-color: rgba(43, 34, 91, 0.477);
+    height: 93.8%;
+    background-color: rgb(31, 27, 54);
     border-radius: 10px;
-    font-size: 0.9rem;
 }
 
 nav img{
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
 }
 
 .nav-img{
-    background-color: white;
+    filter: invert(1);
     border-radius: 10px;
+    transform: translate(-3px, 3px);
 }
 
 nav ul{
@@ -86,8 +87,8 @@ nav ul{
 }
 
 nav ul li{
-    padding-top: 20px;
-    transform: translate(-30px, 20px);
+    padding-top: 30px;
+    transform: translate(-30px, 5px);
     font-size: 1rem;
 }
 
@@ -98,16 +99,25 @@ nav ul li a i{
 
 nav ul li a{
     text-decoration: none;
-    color: white;
-    padding-left: 5px;
+}
+
+.nav-rest{
+    padding-left: 15px;
+    color: rgb(188, 185, 185);
 }
 
 .active{
-    width: 135px;
-    padding: 2px;
-    padding-top: 6px;
+    width: 125px;
+    padding: 6px;
+    padding-top: 3px;
     border-radius: 5px;
     background-color: rgb(171, 9, 168);
+    transform: translate(-28px, 15px);
+}
+
+.active a{
+    position: relative;
+    bottom: 0px;
 }
 
 nav ul li a:hover, .active:hover{
@@ -122,7 +132,7 @@ nav ul li a:active, .active:active{
 /* overall right-side */
 .side{ 
     float: right;
-    height: 190vh;
+    height: 50vh;
     width: 85%;
     background-color: black;
     margin-right: 10px;
@@ -145,40 +155,38 @@ nav ul li a:active, .active:active{
     height: 100%;
     display: flex;
     gap: 10px;
+    margin-left: 30px;
 }
 
 .gl{
-    margin-top: 10px;
     margin:auto;
     padding: 5px;
     text-align: center;
+    position: relative;
+    bottom: 7px;
 }
 
 .gl button{
-    font-size: 0.5rem;
-    background-color: black;
-    height: 25px;   
-    border: none;
-    color: white;
-    position: relative;
-    bottom: 5px;
+    background-color: rgb(52, 48, 75);
+    border-radius: 200px;
+    width: 33px;
+    padding: 4px;
+    border-style: none;
 }
 
 .gl button img{
-    width: 100%;
-    height: 25px;
-    background-color: white;
-    border-radius: 200px;
+    width: 40%;
+    height: 20px;
+    border-radius: 100%;
+    filter: invert(1);
 }
 
-.gl button img:hover{
+.gl button:hover{
     opacity: 0.8;
-    box-shadow:0 2px 2px 0 rgba(130, 105, 105, 0.493);
 }
 
-.gl button img:active{
+.gl button:active{
     opacity: 0.5;
-    box-shadow:0 3px 3px 0 rgba(130, 105, 105, 0.493);
 }
 
 .tr:hover{
@@ -192,29 +200,33 @@ nav ul li a:active, .active:active{
 }
 
 .search-button{
-    flex-basis: 65%;
-    height: 100%;
+    flex-basis: 50%;
+    height: 70px;
     background-color: black;
     text-align: center;
+    margin-left: 20px;
 }
 
 .search-button img{
     width: 10px;
     height: 10px;
     position: relative;
-    left: 70px;
-    background-color: white;
+    left: 35px;
     border-radius: 30px;
 }
 
 #search{
     width: 60%;
     height: 50%;
-    border-radius: 10px;
-    background-color: rgba(43, 34, 91, 0.477);
-    color:rgb(158, 155, 155) ;
-    margin-top: 5px;
-    padding-left: 70px;
+    border-radius: 50px;
+    background-color: rgb(52, 48, 75);
+    padding-left: 40px;
+    border-style: none;
+    font-size: 0.8rem;
+}
+
+input[type="search"]::placeholder{
+    color: rgb(189, 181, 181);
 }
 
 .topbar-right{
@@ -231,17 +243,19 @@ nav ul li a:active, .active:active{
 }
 
 .topbar-right button{
-    background-color: rgba(43, 34, 91, 0.477);
+    background-color: rgb(52, 48, 75);
     border-radius: 200px;
-    width: 30px;
+    width: 35px;
+    height: 35px;
+    border-style: none;
 }
 
 .settings img, .notifications img{
     width: 15px;
     height: 15px;
-    background-color: rgba(255, 255, 255, 0.637);
+    filter: invert(1);
     border-radius: 20px;
-    transform: translate(-1px, 2px);
+    transform: translate(0px, 2px);
 }
 
 .play-logo img{
@@ -255,30 +269,32 @@ nav ul li a:active, .active:active{
 .settings{
     width: 20px;
     height: 20px;
-    background-color: rgba(43, 34, 91, 0.477);
     border-radius: 20px;
-    transform: translate(0,-4px);
+    transform: translate(15px,-10px);
 }
 .notifications{
     width: 20px;
-    height: 20px;
-    background-color: rgba(43, 34, 91, 0.477);
     border-radius: 20px;
-    transform: translate(0,-4px);
+    transform: translate(25px,-10px);
 }
 .play-logo{
-    width: 20px;
-    height: 20px;
+    width: 29px;
+    height: 29px;
     background-color:rgb(171, 9, 168) ;
     border-radius: 20px;
-    transform: translate(20px,-3px);
-    margin-top: 10px;
-    margin-left: 20px;
+    transform: translate(40px,4px);
 }
+
+.play-logo img{
+    width: 23px;
+    height: 23px;
+    transform: translate(3px,3px);
+}
+
 .logo{
     font-family: awa;
-    font-size: 0.9rem;
-    transform: translate(0,-5px);
+    font-size: 1.2rem;
+    transform: translate(15px,-10px);
 }
 
 .logo i{
@@ -297,14 +313,16 @@ nav ul li a:active, .active:active{
 /* imagebar of right-side */
 
 .imagebar{
-    width: 100%;
-    height: 150px;
+    width: 95.5%;
+    margin-left: 35px;
+    height: 200px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     background-image: url(../IMAGES/983308_original_2160x2700.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
 }
 
 .artist{
@@ -314,48 +332,50 @@ nav ul li a:active, .active:active{
 }
 
 .artist-img{
-    width: 70px;
-    height: 70px;
+    width: fit-content;
+    height: fit-content;
     border: 1px solid white;
     border-radius: 70px;
-    transform: translate(-3px, 15px);
+    transform: translate(-10px, 25px);
 }
 
 .artist-img img{
-    width: 70px;
-    height: 70px;
+    width: 110px;
+    height: 110px;
     border-radius: 70px;
 }
 
 .artist h2{
-    font-size: 1rem;
-    transform: translate(0, 27px)
+    font-size: 1.7rem;
+    font-weight: 100;
+    transform: translate(0, 55px)
 }
 
 .artist-div{
     background-color: rgb(171, 9, 168);
-    height: 15px;
+    height: 17px;
     width: 40px;
     text-align: center;
     border-radius: 20px;
-    transform: translate(0, 43px)
+    transform: translate(-5px, 86px)
 }
 
 .artist-div p{
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     position: relative;
-    bottom: 5px;
+    bottom: 8px;
 }
 
 .download-div{
     display: flex;
     gap: 10px;
-    width:200px ;
+    width:150px ;
     height: 40px;
-    background-color: slategray;
-    transform: translate(820px, -51px);
+    background-color: rgb(52, 48, 75);
+    transform: translate(810px, -50px);
     border-radius: 5px;
     text-align: center;
+    padding: 3px;
 }
 .download-img{
     width: 25px;
@@ -378,26 +398,37 @@ nav ul li a:active, .active:active{
 
 /* profilebar of right-side */
 .profilebar{
-    width: 100%;
+    width: 95.5%;
+    margin-left: 35px;
     height: 135px;
     background-color: black;
+    margin-top: 30px;
 }
 
 .profilebar h2{
     width: 100%;
     height: 10%;
     padding-top: 30px;
-    font-weight: 550;
+    font-weight: 100;
+    font-size: 1.3rem;
 }
 
 .profile-flex{
     width: 100%;
-    height: 80%;
+    height: 95.5%;
     display: flex;
+    gap: 10px;
 }
+
+.profile-flex h3{
+    font-size: 0.8rem;
+    font-weight: 100;
+}
+
 .profile-flex p{
-    font-size: 1rem;
-    transform: translate(0, -5px);
+    font-size: 1.5rem;
+    font-weight: 600;
+    transform: translate(0, -8px);
 }
 
 .profile-flex-items{
@@ -420,8 +451,9 @@ nav ul li a:active, .active:active{
 /*streamsbar of right-side */
 
 .streamsbar{
-    width: 100%;
-    height: 240px;
+    width: 95.5%;
+    margin-left: 35px;
+    height: 400px;
 }
 
 .streamsbar-h2{
@@ -432,7 +464,7 @@ nav ul li a:active, .active:active{
 }
 
 .streamsbar-h2 h2{
-    padding-top: 15px;
+    padding-top: 40px;
 }
 
 .streams{
@@ -442,7 +474,7 @@ nav ul li a:active, .active:active{
 
 .streams-amount{
     width: 100%;
-    height: 35%;
+    height: 25%;
     display: flex;
 }
 
@@ -452,19 +484,20 @@ nav ul li a:active, .active:active{
 }
 
 .streams-amount-div p{
-    font-size: 0.6rem;
+    font-size: 0.8rem;
 }
 
 .streams-amount-div h4{
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     position: relative;
     bottom: 15px;
 }
 
 .streams-amount-div h5{
     font-size: 0.6rem;
+    font-weight: 100;
     position: relative;
-    bottom: 30px;
+    bottom: 38px;
 }
 
 .streams-amount-div-1{
@@ -472,6 +505,7 @@ nav ul li a:active, .active:active{
     background-color: rgba(43, 34, 91, 0.477);
     width: 100%;
     height: 95%;
+    border-top-left-radius: 10px;
 }
 
 .streams-amount-div-2{
@@ -483,11 +517,13 @@ nav ul li a:active, .active:active{
     border-left: 0.5px solid white;
     background-color: rgba(34, 30, 59, 0.477);
     width: 100%;
+    border-top-right-radius: 10px;
 }
 
 .streams-graph{
-    width: 100%;
-    height: 50%;
+    width: 99.6%;
+    height: 30%;
+    margin-left: 2px;
     background-image: url(../IMAGES/download.png);
     background-size: cover;
     background-position-y:300px ;
@@ -497,13 +533,15 @@ nav ul li a:active, .active:active{
     background-color: rgba(43, 34, 91, 0.477);
     width: 100%;
     height: 15%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .see-more a{
     text-decoration: none;
     padding-left: 20px;
     position: relative;
-    top: 5px;
+    top: 20px;
     font-size: 1rem;
     font-weight: 600;
     color:rgb(171, 9, 168) ;
@@ -516,14 +554,18 @@ nav ul li a:active, .active:active{
 /* content */
 
 .content{
-    width: 100%;
+    width: 95.5%;
+    margin-left: 40px;
     height: 430px;
-    background-color: black;
+    position: relative;
+    bottom: 90px;
 }
 
 .content h2{
-    padding-left: 20px;
-    padding-top: 20px;
+    font-size: 1.6rem;
+    font-weight: 100;
+    padding-left: 0px;
+    padding-bottom: 00px;
 }
 
 .grid-container-1{
@@ -531,41 +573,41 @@ nav ul li a:active, .active:active{
     grid-template-columns:repeat(3, 2fr);
     grid-template-rows:repeat(3, 1fr);
     gap: 10px;
-    height: 80%;
+    height: 90%;
 }
 
 .grid-items{
     padding: 20px;
-    min-height: 50px;
+    min-height: 120px;
     display: flex;
     gap: 0px;
     border-radius: 2px;
+    background-color: rgba(43, 34, 91, 0.477);
 }
 
 .grid-imgs{
     float: left;
-    height: 108px;
-    width: 100%;
+    height: 150px;
+    width: 150px;
     position: relative;
-    bottom: 20px;
-    right:20px ;
+    bottom: 15px;
+    right:10px ;
     border-radius: 2px;
 }
 
 .grid-imgs img{
-    border-radius: 2px;
+    border-radius: 10px;
     height: 100%;
-    width: 100%;
+    width: 90%;
 }
 
 .grid-writeup{
-    background-color: rgba(43, 34, 91, 0.477);
     float: right;
-    height: 110px;
-    width: 100%;
+    height: 150px;
+    width: 139px;
     position: relative;
     bottom: 20px;
-    right: 18px;
+    right: 10px;
     text-align: center;
 }
 
@@ -573,28 +615,31 @@ nav ul li a:active, .active:active{
     width: 100%;
     text-align: left;
     padding-left: 10px;
+    font-size: 1rem;
+    font-weight: 300;
 }
 
 .grid-writeup p{
-    font-size: 0.4rem;
+    font-size: 0.8rem;
     position: relative;
     bottom: 10px;
-    right: 40px;
+    right: 20px;
 }
 
 .grid-writeup i{
+    font-size: 0.8rem;
     position: relative;
     top: 2px;
 }
 
 .grid-writeup button{
-    width: 120px;
-    height: 20px;
+    width: 140px;
+    height: 25px;
     position: relative;
     bottom: 5px;
-    right: 6px;
+    right: 0px;
     color: white;
-    background-color: gray;
+    background-color: rgb(52, 48, 75);
     font-size: 0.7rem;
     border-radius: 5px;
 }
@@ -603,12 +648,15 @@ nav ul li a:active, .active:active{
     opacity: 0.8;
 }
 
+.draft{
+    margin-top: 140px;
+}
 
 .draft-flex{
     display: flex;
-    gap: 10px;
+    gap: 20px;
     width: 100%;
-    height: 140px;
+    height: 200px;
     background-color: black;
     text-align: center;
 }
@@ -629,21 +677,24 @@ nav ul li a:active, .active:active{
 
 .draft-flex h3{
     position: relative;
-    right:25px ;
-    bottom: 7px;
+    right:20px ;
+    bottom: 4px;
+    font-weight: 300;
+    font-size: 0.9rem;
 }
 .draft-flex button{
     position: relative;
-    bottom: 17px;
-    height: 20px;
+    bottom: 13px;
+    height: 25px;
     width: 90%;
-    background-color: gray;
+    background-color: rgb(52, 48, 75);
     color: white;
+    border-radius: 5px;
 }
 
 .draft-flex-items{
-    width: 150px;
-    height: 140px;
+    width: 170px;
+    height: 100%;
     background-color: rgba(43, 34, 91, 0.477);
     border-radius: 5px;
 }
